@@ -57,7 +57,7 @@ def get_index():
     使用 os.walk 方法来获取所有单词本的编号，返回单词本的最大编号，即 index
     :return: index - 单词本的最大编号
     """
-    for _, dirs, ___ in os.walk("."):
+    for _, dirs, ___ in os.walk(".."):
         index = 0
         for dire in dirs:
             if dire.startswith('workbook'):
